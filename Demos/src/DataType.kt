@@ -26,6 +26,6 @@ fun main () {
 
     var a: String? = "abc"
     a = null
-    print("${a!!}") //Throw NPE
+    println("${a!!}") //Throw NPE
 
 }
