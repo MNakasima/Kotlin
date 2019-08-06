@@ -10,15 +10,15 @@ fun main() {
     println("Name: $name")
     println("Age: $age")
 
+    println("====== Swap Values ======")
     println("Enter x: ")
-    var x = readLine()!!.toInt()
+    var x = readLine()!!.toDouble()
     println("Enter y: ")
-    var y = readLine()!!.toInt()
+    var y = readLine()!!.toDouble()
 
-    var temp = x
-    x = y
-    y = temp
+    x+=y
+    y=x-y
+    x-=y
 
-    println("x:$x y:$y")
-
+    println("x: $x, y: $y")
 }
