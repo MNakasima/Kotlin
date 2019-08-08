@@ -1,3 +1,5 @@
+package basic_structures
+
 import java.util.*
 
 fun main() {

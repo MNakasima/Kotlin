@@ -1,3 +1,5 @@
+package basic_structures
+
 fun main() {
 
     println("Enter your name: ")

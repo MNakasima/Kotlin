@@ -1,11 +1,12 @@
+package basic_structures
+
 fun main () {
 
     //val - It is impossible to update the variable value (Read Only)
     //var - It is possible to update the variable value (R/W)
 
     val name = "Maruko" //Kotlin recognizes data type
-    val age:Int //If you not assign a value to the variable, you should declare the data type
-    age = 23
+    val age:Int = 23 //If you not assign a value to the variable, you should declare the data type
     var job:String? //Means that this value can be null and will receive data later (? after variable declaration)
     job = "Software Developer"
 

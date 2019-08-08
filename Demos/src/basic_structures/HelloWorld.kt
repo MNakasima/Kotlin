@@ -1,3 +1,5 @@
+package basic_structures
+
 fun main (){
 
     //We cannot forget the classic!
