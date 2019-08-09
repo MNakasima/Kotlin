@@ -2,8 +2,6 @@ package data_structures
 
 fun main(){
 
-    println("=== Array ===")
-
     println("Enter number of names: ")
     val maxSize = readLine()!!.toInt()
     var listOfName:Array<String> = Array(maxSize){""}
@@ -14,7 +12,16 @@ fun main(){
     }
 
     for(i in 0 until maxSize){
-        println("Pet $i: ${listOfName[i]}")
+        println("Name $i: ${listOfName[i]}")
+    }
+
+    val message = "Hello my ASD friend, how are you?"
+    val listOfTokens:List<String> = message.trim().split(" ")
+
+    for(token in listOfTokens) {
+        if (!token.contains("ASD")) {
+            println("Token: $token")
+        }
     }
 
 }
