@@ -8,7 +8,7 @@ fun main() {
     val currentMonth = Calendar.getInstance().get(Calendar.MONTH)
     val age:Int
 
-    println("Enter your date of birth")
+    println("Enter your year of birth")
     val yearOfBirth = readLine()!!.toInt()
 
     if(yearOfBirth  > currentYear){
