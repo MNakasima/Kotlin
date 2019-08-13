@@ -4,3 +4,6 @@
 
 # Idea configurations
 .idea/
+
+# File's output
+out/
