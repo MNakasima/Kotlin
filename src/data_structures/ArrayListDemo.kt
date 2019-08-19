@@ -2,7 +2,7 @@ package data_structures
 
 fun main() {
 
-    var listOfName = ArrayList<String>()
+    var listOfName = arrayListOf<String>()
 
     do{
         println("Enter name or enter 'quit' to exit:")

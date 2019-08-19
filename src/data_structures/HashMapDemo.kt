@@ -1,16 +1,44 @@
 package data_structures
 
-fun main(){
+import java.util.*
+import kotlin.collections.HashMap
 
-    var listOfUsers = HashMap<Int, String>()
-    listOfUsers[12] = "Maruko"
-    listOfUsers[55] = "Darkpsy"
-    listOfUsers[4] = "Psycore"
+fun main() {
 
-    for(key in listOfUsers.keys){
-        println("ID $key: ${listOfUsers[key]}")
+    var listOfUsers = hashMapOf<String, LinkedList<String>>()
+
+    while (true) {
+        print("Enter your name or type 'quit': ")
+        val name = readLine()!!.toString()
+        if (name == "quit") {
+            break
+        }
+
+        print("Where you live: ")
+        val livePlace = readLine()!!.toString()
+
+        var listOfUserPets = LinkedList<String>()
+
+        do {
+            print("Enter a Pet name or type 'next': ")
+            val petName = readLine()!!.toString()
+            if (petName != "next") {
+                listOfUserPets.add(petName)
+            }
+        } while (petName != "next")
+
+        listOfUsers["$name:$livePlace"] = listOfUserPets
+
     }
 
+    println("=== User Info ===")
+    for (key in listOfUsers.keys) {
+        println("Name and Place: $key")
+        var listOfPet = listOfUsers[key]!!
+        for (petName in listOfPet) {
+            println("Pet: $petName")
+        }
+    }
 }
 
 /*
