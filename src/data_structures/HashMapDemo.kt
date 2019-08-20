@@ -5,7 +5,9 @@ import kotlin.collections.HashMap
 
 fun main() {
 
-    var listOfUsers = hashMapOf<String, LinkedList<String>>()
+    var listOfUsers = hashMapOf<String, LinkedList<String>>() // or mutableMapOf(don't care about implementation) or HashMap(Java version)
+    //mutableMapOf<T>() is an inlined function invocation that returns MutableList<T>. As of today the mutableMapOf does return an instance of HashMap.
+    //HashMap<T>() or hashMapOf<T>() is a constructor invocation and cannot be inlined.
 
     while (true) {
         print("Enter your name or type 'quit': ")

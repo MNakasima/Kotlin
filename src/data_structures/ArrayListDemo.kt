@@ -2,7 +2,9 @@ package data_structures
 
 fun main() {
 
-    var listOfName = arrayListOf<String>()
+    var listOfName = arrayListOf<String>() //or mutableListOf(don't care about the implementation) or ArrayList(Java version)
+    //mutableListOf<T>() is an inlined function invocation that returns MutableList<T>. As of today the mutableListOf does return an instance of ArrayList.
+    //ArrayList<T>() or arrayListOf<T>() is a constructor invocation and cannot be inlined.
 
     do{
         println("Enter name or enter 'quit' to exit:")
