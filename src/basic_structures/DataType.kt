@@ -15,4 +15,9 @@ fun main () {
     println("Age: $age")
     println ("Departament: ${job!!}") //!! means non-null value, and if it is a null value, it will throw the NPE
 
+    when(job){
+        "Software Developer" -> println("TI Area")
+        else -> println("Other area")
+    }
+
 }
