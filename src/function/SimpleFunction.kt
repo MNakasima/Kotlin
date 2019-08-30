@@ -1,4 +1,4 @@
-package Function
+package function
 
 fun sumNumbersVoid(x:Double=3.5, y:Double=4.5){ //no return
     val sum = x+y

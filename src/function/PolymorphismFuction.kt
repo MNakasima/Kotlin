@@ -1,4 +1,4 @@
-package Function
+package function
 
 fun showInfo(cardID:Int){
     println(cardID)
