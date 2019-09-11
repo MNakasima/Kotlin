@@ -1,6 +1,6 @@
-package oop.com.car.maintain
+package oop.com.car
 
-class Truck:CarOptions{
+class Truck: CarOptions {
 
     var subType:String?=null
 

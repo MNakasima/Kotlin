@@ -1,4 +1,4 @@
-package oop.com.car.maintain
+package oop.com.car
 
 class Car(val brand:String, val model:Int, val price:Double, val milesDrive:Int, val owner:String){
 

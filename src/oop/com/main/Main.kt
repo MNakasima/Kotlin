@@ -1,6 +1,6 @@
-package oop.com.car.maintain
+package oop.com.main
 
-import java.util.*
+import oop.com.car.Truck
 
 fun main (){
 
@@ -38,9 +38,9 @@ fun main (){
     */
 
     /*Truck Class - Inheritance*/
-    val truck1 = Truck("BMW",2015,10000.0,105, "Maruko", "Dump")
+    val truck1 = Truck("BMW", 2015, 10000.0, 105, "Maruko", "Dump")
 
-    val truck2 = Truck("Toyota",2018,123200.0,1105, "Garbage")
+    val truck2 = Truck("Toyota", 2018, 123200.0, 1105, "Garbage")
 
     val listOfTruck = arrayListOf<Truck>()
     listOfTruck.add(truck1)
