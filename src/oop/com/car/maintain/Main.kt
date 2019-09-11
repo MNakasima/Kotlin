@@ -21,6 +21,7 @@ fun main (){
     }
     */
 
+    /*
     /*CarOptions class*/
     val car1 = CarOptions("BMW",2015,10000.0,105, "Maruko")
 
@@ -34,7 +35,21 @@ fun main (){
         println("Owner: ${car.owner}")
         println("Price: ${car.getCarPrice()}")
     }
+    */
 
+    /*Truck Class - Inheritance*/
+    val truck1 = Truck("BMW",2015,10000.0,105, "Maruko", "Dump")
 
+    val truck2 = Truck("Toyota",2018,123200.0,1105, "Garbage")
+
+    val listOfTruck = arrayListOf<Truck>()
+    listOfTruck.add(truck1)
+    listOfTruck.add(truck2)
+
+    for(truck in listOfTruck){
+        println("Brand: ${truck.brand}")
+        println("SubType: ${truck.subType}")
+        println("Price: ${truck.getCarPrice()}")
+    }
 
 }

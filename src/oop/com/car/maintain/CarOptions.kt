@@ -1,6 +1,6 @@
 package oop.com.car.maintain
 
-class CarOptions(){
+open class CarOptions(){
 
     var brand:String?=null
     var model:Int?=null
