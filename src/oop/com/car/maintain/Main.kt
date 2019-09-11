@@ -4,18 +4,11 @@ import java.util.*
 
 fun main (){
 
+    /*
+    /*Car class*/
     val car1 = Car("BMW",2015,10000.0,105, "Maruko")
 
-    println(car1.model)
-    println(car1.brand)
-    println(car1.getCarPrice())
-
     val car2 = Car("Toyota",2005,11200.0,55, "Maruko")
-
-    println(car2.price)
-    println(car2.milesDrive)
-    println(car2.getCarPrice())
-    println(car2.owner)
 
     val listOfCar = arrayListOf<Car>()
     listOfCar.add(car1)
@@ -26,5 +19,22 @@ fun main (){
         println("Owner: ${car.owner}")
         println("Price: ${car.getCarPrice()}")
     }
+    */
+
+    /*CarOptions class*/
+    val car1 = CarOptions("BMW",2015,10000.0,105, "Maruko")
+
+    val car2 = CarOptions("Toyota",2005,11200.0,55)
+
+    val listOfCar = arrayListOf<CarOptions>()
+    listOfCar.add(car1)
+    listOfCar.add(car2)
+
+    for(car in listOfCar){
+        println("Owner: ${car.owner}")
+        println("Price: ${car.getCarPrice()}")
+    }
+
+
 
 }
