@@ -4,7 +4,7 @@ open class CarOptions(){
 
     var brand:String?=null
     var model:Int?=null
-    var price:Double?=null
+    private var price:Double?=null
     var milesDrive:Int?=null
     var owner:String?=null
 
@@ -24,8 +24,12 @@ open class CarOptions(){
         this.owner = owner
     }
 
-    fun getCarPrice():Double{
+    open fun getCarPrice():Double{
         return this.price!!-(milesDrive!!.toDouble()*10)
+    }
+
+    fun getPrice():Double{
+        return this.price!!
     }
 
 }

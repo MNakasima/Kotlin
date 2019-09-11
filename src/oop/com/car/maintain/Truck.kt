@@ -16,5 +16,17 @@ class Truck:CarOptions{
         this.subType = subType
     }
 
+    override fun getCarPrice():Double{
+        return this.getPrice()-(this.milesDrive!!.toDouble()*20)
+    }
 
+    fun getParentCarPriceWrapper():Double{
+        return super.getCarPrice()
+    }
+
+}
+
+//Extension
+fun Truck.getCarPriceWrapper():Double{
+    return this.getCarPrice() //cannot be super because it is a extension, this function does not know who the parent is.
 }
