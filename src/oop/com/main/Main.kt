@@ -1,6 +1,7 @@
 package oop.com.main
 
 import oop.com.objects.*
+import java.util.*
 
 fun main (args:Array<String>){
 
@@ -63,7 +64,6 @@ fun main (args:Array<String>){
     var nested = Outer.Nested()
 
     /*Singleton*/
-
     var s1 = Singleton.instance
     s1.name="Maruko"
     println(s1.name)
@@ -71,4 +71,18 @@ fun main (args:Array<String>){
     var s2 = Singleton.instance
     println(s2.name)
 
+    /*Comparable*/
+    var listOfNames = arrayListOf<Persons>()
+    listOfNames.add(Persons("Maruko",24))
+    listOfNames.add(Persons("Outro",30))
+    listOfNames.add(Persons("Outro",19))
+
+    Collections.sort(listOfNames)
+
+    for(person in listOfNames){
+        println(person.name)
+        println(person.age)
+    }
+
 }
+
