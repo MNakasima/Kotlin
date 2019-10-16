@@ -62,5 +62,13 @@ fun main (args:Array<String>){
     var outer = Outer()
     var nested = Outer.Nested()
 
+    /*Singleton*/
+
+    var s1 = Singleton.instance
+    s1.name="Maruko"
+    println(s1.name)
+
+    var s2 = Singleton.instance
+    println(s2.name)
 
 }
