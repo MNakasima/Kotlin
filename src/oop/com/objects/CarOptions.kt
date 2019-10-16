@@ -1,4 +1,4 @@
-package oop.com.car
+package oop.com.objects
 
 open class CarOptions(){
 

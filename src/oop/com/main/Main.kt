@@ -1,10 +1,13 @@
 package oop.com.main
 
-import oop.com.car.Truck
+import oop.com.objects.Car
+import oop.com.objects.CarOptions
+import oop.com.objects.Truck
+import oop.com.objects.UserAdmin
 
-fun main (){
+fun main (args:Array<String>){
 
-    /*
+
     /*Car class*/
     val car1 = Car("BMW",2015,10000.0,105, "Maruko")
 
@@ -19,15 +22,15 @@ fun main (){
         println("Owner: ${car.owner}")
         println("Price: ${car.getCarPrice()}")
     }
-    */
 
-    /*
+
+
     /*CarOptions class*/
-    val car1 = CarOptions("BMW",2015,10000.0,105, "Maruko")
+    val car3 = CarOptions("BMW",2015,10000.0,105, "Maruko")
 
-    val car2 = CarOptions("Toyota",2005,11200.0,55)
+    val car4 = CarOptions("Toyota",2005,11200.0,55)
 
-    val listOfCar = arrayListOf<CarOptions>()
+    val listOfCar2 = arrayListOf<CarOptions>()
     listOfCar.add(car1)
     listOfCar.add(car2)
 
@@ -35,7 +38,8 @@ fun main (){
         println("Owner: ${car.owner}")
         println("Price: ${car.getCarPrice()}")
     }
-    */
+
+
 
     /*Truck Class - Inheritance*/
     val truck1 = Truck("BMW", 2015, 10000.0, 105, "Maruko", "Dump")
@@ -51,5 +55,10 @@ fun main (){
         println("SubType: ${truck.subType}")
         println("Price: ${truck.getCarPrice()}")
     }
+
+
+    /*Generic Class*/
+    var UserAdmin = UserAdmin<String>("Class that can receive any type of data is called generic")
+    var UserAdmin2 = UserAdmin<Int>(123)
 
 }

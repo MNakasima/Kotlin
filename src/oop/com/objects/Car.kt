@@ -1,4 +1,4 @@
-package oop.com.car
+package oop.com.objects
 
 class Car(val brand:String, val model:Int, val price:Double, val milesDrive:Int, val owner:String){
 
