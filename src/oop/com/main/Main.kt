@@ -1,9 +1,6 @@
 package oop.com.main
 
-import oop.com.objects.Car
-import oop.com.objects.CarOptions
-import oop.com.objects.Truck
-import oop.com.objects.UserAdmin
+import oop.com.objects.*
 
 fun main (args:Array<String>){
 
@@ -60,5 +57,10 @@ fun main (args:Array<String>){
     /*Generic Class*/
     var UserAdmin = UserAdmin<String>("Class that can receive any type of data is called generic")
     var UserAdmin2 = UserAdmin<Int>(123)
+
+    /*NestedClass*/
+    var outer = Outer()
+    var nested = Outer.Nested()
+
 
 }
